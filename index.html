@@ -12,9 +12,11 @@ button = driver.find_element(By.ID,'').click()
 titile = driver.title()
 if title= 'facebook ':
    print( 'logintestcase is passed  ')
+   driver.close()
 
 else : 
    print('login test cases failed ')
    driver.get_screenshot_as_file('c:fblogintest.png')
+   driver.close()
 
 
